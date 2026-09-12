@@ -1,38 +1,38 @@
-# TB-in-India-Analysis-Monitoring-Dashboard
-An interactive Power BI dashboard analyzing Tuberculosis (TB) notification trends, demographic distribution, and public vs. private healthcare sector reporting patterns across India.
-# 📊 TB in India: Analysis & Monitoring Dashboard (Power BI)
+📊 TB in India: Analysis & Monitoring Dashboard (Power BI)
+📌 Overview
+This project provides an in-depth analysis of Tuberculosis (TB) notification trends, patient demographics, and treatment monitoring across India. The dashboard aims to extract actionable insights from public health data to support disease control strategies and enable targeted interventions.
 
-## 📌 Overview
-Is project me India me Tuberculosis (TB) ke notification trends, demographic distribution, aur treatment outcomes ka deep-dive analysis kiya gaya hai. Dashboard ka maksad public health data se actionable insights nikalna hai taaki disease control aur targeted intervention me madad mil sake.
+<img width="907" height="499" alt="TB_IN_INDIA-DASHBOARD" src="https://github.com/user-attachments/assets/42ec8042-e8ef-45a5-805d-5e7af2ab55d9" />
 
----
+🎯 Key Objectives
+Trend Analysis: Track year-over-year notification patterns and case velocity across regions.
 
-## 🎯 Key Objectives
-* **Trend Analysis:** Saal-dar-saal TB cases ke notification patterns ko track karna.
-* **Demographic Breakdown:** Gender-wise (Male vs. Female) aur age-group wise prevalence samajhna.
-* **Sector-wise Notification:** Public health facilities vs. Private sector healthcare se report hone wale cases ka comparison.
-* **Geographical Mapping:** High-burden states aur districts ko identify karna.
+Demographic Breakdown: Analyze prevalence across gender (Male vs. Female) and age-group segments.
 
----
+Sector-wise Notification: Compare notification volumes between public health facilities and the private healthcare sector.
 
-## 🛠️ Tech Stack & Skills
-* **Tool:** Microsoft Power BI Desktop
-* **Language:** DAX (Data Analysis Expressions)
-* **Data Transformation:** Power Query (Data cleaning, normalization, pivoting)
-* **Visuals Used:** KPI Cards, Donut Charts, Stacked Bar Charts, Line & Clustered Column Charts, Shape Maps
+Geographical Mapping: Identify high-burden states and districts requiring targeted resource allocation.
 
----
+🛠️ Tech Stack & Skills
+Tool: Microsoft Power BI Desktop
 
-## 🔍 Key Insights
-* **Demographics:** Male patients me TB notification rates female patients ke mukable significantly higher hain.
-* **Age Group:** Productive age group (15–45 saal) me cases ka concentration sabse zyada paya gaya.
-* **Sector Contribution:** Public sector notification dominant hai, par private sector ki reporting me gradually improvement dekhi gayi hai.
+Calculations: DAX (Data Analysis Expressions) for dynamic KPIs, growth metrics, and custom distributions
 
----
+Data Transformation: Power Query (data cleaning, missing-value handling, unpivoting, and normalization)
 
-## 📂 Project Structure
-```text
+Data Visualizations: KPI Cards, Donut Charts, Stacked Bar Charts, Line & Clustered Column Charts, Shape Maps
+
+🔍 Key Insights
+Demographics: TB notification rates among male patients are significantly higher than female patients across most reporting regions.
+
+Age Group: The highest concentration of cases is observed in the economically active age cohort (15–45 years).
+
+Sector Contribution: While public sector notifications dominate overall volume, private sector notifications demonstrate consistent growth due to improved reporting compliance.
+
+📂 Project Structure
+Plaintext
 ├── TB_Dashboard.pbix         # Power BI project file
 ├── Data/                     # Raw & cleaned datasets (CSV/Excel)
 ├── Screenshots/              # Dashboard preview images
+│   └── dashboard_preview.png # Main dashboard screenshot
 └── README.md                 # Project documentation
