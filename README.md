@@ -1,38 +1,67 @@
-📊 TB in India: Analysis & Monitoring Dashboard (Power BI)
-📌 Overview
-This project provides an in-depth analysis of Tuberculosis (TB) notification trends, patient demographics, and treatment monitoring across India. The dashboard aims to extract actionable insights from public health data to support disease control strategies and enable targeted interventions.
+# 📊 TB in India: Analytical & Monitoring Dashboard (Power BI)
 
-<img width="907" height="499" alt="TB_IN_INDIA-DASHBOARD" src="https://github.com/user-attachments/assets/42ec8042-e8ef-45a5-805d-5e7af2ab55d9" />
+An interactive Power BI dashboard tracking Tuberculosis (TB) notifications, demographic profiles, diagnostic methods, and treatment outcomes in India under the **TB Mukt Bharat (Ni-kshay)** initiative.
 
-🎯 Key Objectives
-Trend Analysis: Track year-over-year notification patterns and case velocity across regions.
+---
 
-Demographic Breakdown: Analyze prevalence across gender (Male vs. Female) and age-group segments.
+## 🖼️ Dashboard Preview
 
-Sector-wise Notification: Compare notification volumes between public health facilities and the private healthcare sector.
+<img width="907" height="499" alt="TB_IN_INDIA-DASHBOARD" src="https://github.com/user-attachments/assets/4b551a21-6c41-46c5-8fcc-1e60376042e9" />
 
-Geographical Mapping: Identify high-burden states and districts requiring targeted resource allocation.
 
-🛠️ Tech Stack & Skills
-Tool: Microsoft Power BI Desktop
+---
 
-Calculations: DAX (Data Analysis Expressions) for dynamic KPIs, growth metrics, and custom distributions
+## 📌 Executive Summary
+Tuberculosis continues to be a major public health priority in India. This dashboard provides a structured, data-driven view of patient trends, diagnostic distribution, clinical comorbidities, and treatment adherence across reporting periods (2023–2025).
 
-Data Transformation: Power Query (data cleaning, missing-value handling, unpivoting, and normalization)
+---
 
-Data Visualizations: KPI Cards, Donut Charts, Stacked Bar Charts, Line & Clustered Column Charts, Shape Maps
+## 🎯 Key Metrics & Highlights
 
-🔍 Key Insights
-Demographics: TB notification rates among male patients are significantly higher than female patients across most reporting regions.
+| Metric | Value | Description |
+| :--- | :--- | :--- |
+| **Total TB Patients** | 31,232 | Cumulative notified TB patient records |
+| **New TB Patients** | 22,039 | Newly detected and registered cases |
+| **On Active Treatment** | 806 | Patients currently undergoing treatment regimens |
+| **Successfully Cured** | 4,059 | Completed and clinically validated cured cases |
+| **TB Deaths** | 1,200 | Total recorded mortality during reporting period |
+| **Gender Distribution** | 61.71% M / 38.27% F | 19,274 Male vs. 11,952 Female patients |
+| **Disease Site** | 69.94% Pulmonary | 21,840 Pulmonary vs. 9,392 Extra-Pulmonary |
 
-Age Group: The highest concentration of cases is observed in the economically active age cohort (15–45 years).
+---
 
-Sector Contribution: While public sector notifications dominate overall volume, private sector notifications demonstrate consistent growth due to improved reporting compliance.
+## 🔍 Detailed Analytical Findings
 
-📂 Project Structure
-Plaintext
-├── TB_Dashboard.pbix         # Power BI project file
-├── Data/                     # Raw & cleaned datasets (CSV/Excel)
-├── Screenshots/              # Dashboard preview images
-│   └── dashboard_preview.png # Main dashboard screenshot
-└── README.md                 # Project documentation
+* **Age Cohort Distribution:** The highest incidence is concentrated in individuals aged **25–34 years (6,700 cases)**, followed closely by **55 & above (6,300 cases)** and **15–24 years (5,900 cases)**, impacting the primary working-age population.
+* **Diagnostic Basis:** **Chest X-Ray** remains the dominant screening method (12,197 cases), with significant contributions from molecular diagnostics such as **CBNAAT** (5,779 cases), **Microscopy** (2,863 cases), and **TrueNat** (1,322 cases).
+* **Comorbidity Screening:** Integrated tracking for **HIV status** (28,922 screened) and **Diabetes status** (25,962 screened) to monitor dual-burden vulnerabilities.
+* **Treatment Outcomes:** Visual tracking of Treatment Completed, Cured, Died, On Treatment, Treatment Regimen Changed, and Loss to Follow-up (LFU).
+
+---
+
+## 🛠️ Tech Stack & Implementation Details
+
+* **Tool:** Microsoft Power BI Desktop
+* **Data Modeling & DAX:**
+  * Dynamic outcome percentage measures
+  * Rate calculations per 1 Lakh Population
+  * Year-over-Year (YoY) and monthly case trend aggregations
+* **ETL & Data Cleaning:** Power Query (type casting, handling null values, conditional column mapping)
+* **Visualizations:**
+  * **KPI Cards:** Top-level summary metrics
+  * **Line Chart:** Monthly trend analysis over time
+  * **Horizontal Bar Chart:** Age group stratification
+  * **Donut & Gauge Charts:** Gender split, Pulmonary status, and Comorbidity targets
+  * **Vertical Column Chart:** Diagnostic test distribution
+  * **Interactive Slicers:** Date Range, Year (2023, 2024, 2025), Basis of Diagnosis, Type of Case, HIV Status, and Diabetes Status
+
+---
+
+## 📂 Project Structure
+
+```text
+├── TB_Dashboard.pbix         # Main Power BI dashboard file
+├── Data/                     # Cleaned dataset (CSV/Excel)
+├── Screenshots/              # Dashboard preview and visual exports
+│   └── dashboard_preview.png # High-resolution screenshot
+└── README.md                 # Complete project documentation
